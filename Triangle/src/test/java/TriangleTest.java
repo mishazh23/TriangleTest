@@ -1,10 +1,10 @@
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.params.ParameterizedTest;
 
 
 public class TriangleTest {
+
 
 
     @Test
@@ -24,8 +24,8 @@ public class TriangleTest {
     @Test
     public void checkFalseTest() throws Exception {
         try{
-        Assert.assertFalse(TriangleCheck.check(1, 1, 2));
-    }catch (Exception e){
+            Assert.assertFalse(TriangleCheck.check(1, 1, 2));
+        }catch (Exception e){
             Assertions.fail(e.getMessage());
         }
     }
