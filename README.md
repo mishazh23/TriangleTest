@@ -1,1 +1,3 @@
 # TriangleTest
+
+JUnit tests
