@@ -34,17 +34,21 @@ public class TriangleTest {
     @Test
     public void checkFalseTestWithZero() throws Exception {
         try{
-            Assert.assertFalse(TriangleCheck.check(0, 1, 2));
+            TriangleCheck.check(0, 1, 2);
         }catch (Exception e){
-            Assertions.fail(e.getMessage());
+            String expected = "Values equal or less then 0 are not allowed!";
+            String actual = e.getMessage();
+            Assertions.assertEquals(expected, actual);
         }
     }
     @Test
     public void checkFalseTestNegative() throws Exception {
         try{
-            Assert.assertFalse(TriangleCheck.check(-3,3 , 5));
+            TriangleCheck.check(-3,3 , 5);
         }catch (Exception e){
-            Assertions.fail(e.getMessage());
+            String expected = "Values equal or less then 0 are not allowed!";
+            String actual = e.getMessage();
+            Assertions.assertEquals(expected, actual);
         }
     }
 }
